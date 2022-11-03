@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.profile-det {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile_img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #EAECF0;
+  background-image: url("./assets/profile-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.edit-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  visibility: hidden;
+  transition: all .5s ease-in-out;
+}
+
+.edit-img svg {
+  display: none;
+  margin-bottom: 10px;
+  transition: all .5s ease-in-out;
+}
+
+#profile_img:hover .edit-img {
+  visibility: visible;
+  background-color: #344054BF;
+}
+
+.profile-img:hover .edit-img svg {
+  display: flex;
+}
+
+.profile-name {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.share {
+  position: absolute;
+  top: 5%;
+  right: 20%;
+}
+
+.share-btn2 {
+  display: none;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.link-item {
+  text-decoration: none;
+  color: black;
+  border: 1px solid #EAECF0;
+  border-radius: 10px;
+  background-color: #EAECF0;
+  width: 80%;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+  font-weight: 500;
+  transition: background-color .3s ease-in-out;
+}
+
+.link-item:hover {
+  background-color: #e2e4e7;
+}
+
+.link-item:active {
+  background-color: #d7d9dd;
+}
+
+.v-hidden {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid #e2e4e7;
+  padding: 40px 0;
+  margin: auto;
+  width: 90%;
+}
+
+/* Mobile View */
+@media screen and (max-width: 520px) {
+
+  .share {
+    top: 2%;
+    right: 10%;
+  }
+
+  .share-btn2 {
+    display: block;
+  }
+
+  .share-btn1 {
+    display: none;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer svg {
+    margin: 2% 0;
+  }
+}
