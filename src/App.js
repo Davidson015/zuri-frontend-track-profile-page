@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Links from './components/Links';
+import Footer from './components/Footer';
 
 import './styles.css';
 
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
       <Header />
       <Links />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
