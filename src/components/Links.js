@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const Links = () => {
   return (
@@ -9,6 +10,7 @@ const Links = () => {
       <a className='link-item' href="https://books.zuri.team/python-for-beginners?ref_id=davidson_015" target="_blank" id="book_python" rel="noreferrer">Python Books</a>
       <a className='link-item' href="https://background.zuri.team/" target="_blank" id="pitch" rel="noreferrer">Background Check for Coders</a>
       <a className='link-item' href="https://books.zuri.team/design-rules" target="_blank" id="book_design" rel="noreferrer">Design Books</a>
+      <Link to={`/contact`} className='link-item'>Contact Me</Link>
 
       <svg width="1216" height="72" viewBox="0 0 1216 72" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="1216" height="72" fill="white"/>

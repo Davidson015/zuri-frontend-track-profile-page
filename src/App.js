@@ -14,7 +14,10 @@ import './styles.css';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Links />,
+    element: <>
+      <Header />
+      <Links />
+    </>,
   },
   {
     path: "/contact",
@@ -25,7 +28,6 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="App">
-      <Header />
       <RouterProvider router={router} />
       <Footer />
     </div>
