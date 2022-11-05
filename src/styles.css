@@ -148,9 +148,12 @@ form label {
 }
 
 .name-inputs div {
-  display: flex;
-  flex-direction: column;
   width: 100%;
+}
+
+.name-inputs div input, .name-inputs div label {
+  display: block;
+  width: 90%;
 }
 
 #first_name{
@@ -211,6 +214,16 @@ textarea {
 
   .name-inputs {
     flex-direction: column;
+  }
+
+  .name-inputs div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name-inputs div input, .name-inputs div label {
+    display: flex;
+    width: initial;
   }
 
   #first_name {
