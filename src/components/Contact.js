@@ -10,19 +10,19 @@ const Contact = () => {
         <div className="name-inputs">
           <div>
             <label for="first_name" >First name</label>
-            <input id="first_name" type="text" placeholder="Enter your first name" />
+            <input id="first_name" type="text" placeholder="Enter your first name" required />
           </div>
           <div>
             <label for="last_name" >Last name</label>
-            <input id="last_name" type="text" placeholder="Enter your last name" />
+            <input id="last_name" type="text" placeholder="Enter your last name" required />
           </div>
         </div>
 
         <label for="email">Email</label>
-        <input id="email" type="email" placeholder="yourname@email.com" />
+        <input id="email" type="email" placeholder="yourname@email.com" required />
         
         <label for="message">Message</label>
-        <textarea id="message" placeholder="Send me a message and I'll reply you as soon as possible..." />
+        <textarea id="message" placeholder="Send me a message and I'll reply you as soon as possible..." required />
 
         <div className="consent-msg">
           <input id="check" type="checkbox" />
