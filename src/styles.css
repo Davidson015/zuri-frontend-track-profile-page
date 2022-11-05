@@ -130,8 +130,11 @@ form {
 
 form input{
   border-color: #D0D5DD;
+  outline-color: #84CAFF;
+  border-width: 1px;
+  border-style: solid;
   border-radius: 8px;
-  height: 2.5rem;
+  height: 3rem;
   margin-bottom: 30px;
   padding: 0 15px;
 }
@@ -159,6 +162,7 @@ form label {
 
 textarea {
   border-color: #D0D5DD;
+  outline-color: #84CAFF;
   border-radius: 8px;
   height: 8rem;
   margin-bottom: 30px;
