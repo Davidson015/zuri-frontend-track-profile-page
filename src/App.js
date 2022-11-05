@@ -1,7 +1,7 @@
 import {
-  createBrowserRouter,
-  RouterProvider,
-  Route
+  BrowserRouter as Router,
+  Route,
+  Routes
 } from 'react-router-dom';
 
 import Header from './components/Header';
@@ -11,26 +11,29 @@ import Footer from './components/Footer';
 
 import './styles.css';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <>
-      <Header />
-      <Links />
-    </>,
-  },
-  {
-    path: "/contact",
-    element: <Contact />
-  }
-])
-
 function App() {
   return (
-    <div className="App">
-      <RouterProvider router={router} />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route
+            exact
+            path='/'
+            element={<>
+              <Header />
+              < Links />
+            </>}
+          />
+          
+          <Route
+            exact
+            path='/contact'
+            element={<Contact />}
+          />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
